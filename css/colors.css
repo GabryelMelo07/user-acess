@@ -1,0 +1,13 @@
+:root {
+    --main-color1: #67127C;
+    --main-color2: #5C1374;
+    --main-color3: #481658;
+
+    --secondary-color1: #72418C;
+    --secondary-color2: #8D69A2;
+    --secondary-color3: #B098C1;
+
+    --tertiary-color: #C9B5D4;
+    --quaternary-color: #efd7fc;
+    --white: rgba(255,255,255,0.95);
+}

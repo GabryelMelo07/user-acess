@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Acess</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="plugins/bootstrap/js/bootstrap.min.js" defer></script>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js" defer></script>
+    <script type="importmap" defer>
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<version>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    
+    <div class="main-card">
+
+        <div class="left-card">
+            <div class="image">
+                <div id="canvas"></div>
+            </div>
+        </div>
+
+        <div class="right-card">
+            <div class="right-card-nav">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Login</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Register</button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+                <!-- Login form -->
+                <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <form>
+                        <div class="form-group">
+                            <label for="email-login">Email address</label>
+                            <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-login">Password</label>
+                            <input type="password" class="form-control" id="password-login" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                    
+                <!-- Register form -->
+                <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <form>
+                        <div class="form-group">
+                            <label for="name-register">Full name</label>
+                            <input type="text" class="form-control" id="name-register">
+                        </div>
+                        <div class="form-group">
+                            <label for="username-register">Username</label>
+                            <input type="text" class="form-control" id="username-register">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-register">E-mail</label>
+                            <input type="email" class="form-control" id="email-register" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday-register">Birthday</label>
+                            <input type="date" class="form-control" id="birthday-register" name="birthday">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-register">Password</label>
+                            <input type="password" class="form-control" id="password-register" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password-register">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password-register" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
